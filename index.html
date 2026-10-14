@@ -1,217 +1,24 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Setareh Sadeghi · UI/UX Designer</title>
 <meta name="description" content="Setareh Sadeghi, UI/UX designer in the Netherlands. Sole designer at Taaghche, a reading app with 2M+ users: AI reading assistant, checkout and pay later, data dashboards and illustration.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://brezaeifar.github.io/setareh-sadeghi/">
+<meta property="og:title" content="Setareh Sadeghi · UI/UX Designer">
+<meta property="og:description" content="Setareh Sadeghi, UI/UX designer in the Netherlands. Sole designer at Taaghche, a reading app with 2M+ users: AI reading assistant, checkout and pay later, data dashboards and illustration.">
 <meta property="og:image" content="https://brezaeifar.github.io/setareh-sadeghi/img/av-final.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://brezaeifar.github.io/setareh-sadeghi/">
-<meta property="og:title" content="Setareh Sadeghi · UI/UX Designer">
-<meta property="og:description" content="Sole UI/UX designer for a reading app with 2M+ users. Five case studies, from brief to release.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e7c77'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='19' text-anchor='middle' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<style>
-/* Layout: a drafting-grid sheet; each case study reads like an annotated hand-off file — brief on the left, screens on the right, spec notes in mono. */
-:root{
-  --paper:#f5f7f5; --sheet:#ffffff; --ink:#132321; --muted:#566664; --line:#d8e0dd; --grid:rgba(15,127,122,.07);
-  --teal:#0e7c77; --teal-soft:#e2f1ef; --marigold:#e9801a; --marigold-soft:#fdf0e1; --marigold-ink:#a85400; --teal-ink:#0a5f5b;
-  --f-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
-  --f-body:"Figtree", "Helvetica Neue", Arial, sans-serif;
-  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
-  --wrap:1120px; --r:14px;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#0e1514; --sheet:#152020; --ink:#e7eeec; --muted:#9db0ac; --line:#26353330; --line:#283634; --grid:rgba(79,194,187,.07);
-  --teal:#56c3bb; --teal-soft:#16302e; --marigold:#f3a24c; --marigold-soft:#33240f; --marigold-ink:#f3a24c; --teal-ink:#7dd6cf; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#0e1514; --sheet:#152020; --ink:#e7eeec; --muted:#9db0ac; --line:#283634; --grid:rgba(79,194,187,.07);
-  --teal:#56c3bb; --teal-soft:#16302e; --marigold:#f3a24c; --marigold-soft:#33240f; --marigold-ink:#f3a24c; --teal-ink:#7dd6cf; color-scheme:dark}
-
-*{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
-.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
-a{color:var(--teal);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--marigold);outline-offset:3px;border-radius:4px}
-h1,h2,h3{font-family:var(--f-display);line-height:1.08;text-wrap:balance;margin:0;letter-spacing:-.015em}
-p{margin:0}
-.mono{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.04em}
-.eyebrow{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
-
-/* nav */
-.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
-.brand{font-family:var(--f-display);font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none}
-.nav ul{display:flex;gap:clamp(12px,2.4vw,28px);list-style:none;margin:0;padding:0;flex-wrap:wrap}
-.nav ul a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500}
-.nav ul a:hover{color:var(--ink)}
-@media (max-width:560px){.nav ul li.opt{display:none}}
-
-/* hero */
-.hero{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;border-bottom:1px solid var(--line)}
-.hero .wrap{padding-block:clamp(40px,7vw,80px) clamp(36px,5vw,56px);display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
-.hero h1{font-size:clamp(2.3rem,5.6vw,4.1rem);font-weight:800;max-width:15ch}
-.hero h1 em{font-style:normal;color:var(--teal)}
-.hero .lede{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--muted);max-width:60ch}
-.hero .who{display:flex;align-items:center;gap:14px}
-.hero .who img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--sheet)}
-.hero .who b{display:block;font-family:var(--f-display);font-size:1.1rem}
-.hero .who span{color:var(--muted);font-size:.92rem}
-.cast{background:#3d3d3d;border-radius:var(--r);padding:clamp(12px,2vw,22px);max-width:100%}
-.cast img{display:block;width:100%;height:auto;border-radius:6px}
-.cast figcaption{color:#cfd6d4;margin-top:10px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-.facts div{background:var(--sheet);padding:18px 20px}
-.facts b{display:block;font-family:var(--f-display);font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums}
-.facts span{color:var(--muted);font-size:.9rem;line-height:1.4;display:block}
-
-/* sections */
-section{padding-block:clamp(56px,8vw,104px)}
-section+section{border-top:1px solid var(--line)}
-.sec-head{display:grid;gap:12px;margin-bottom:36px;max-width:68ch}
-.sec-head h2{font-size:clamp(1.9rem,4vw,2.9rem);font-weight:700}
-.sec-head p{color:var(--muted)}
-
-/* index cards */
-.index{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
-.index a{grid-column:span 2}.index a:nth-child(4),.index a:nth-child(5){grid-column:span 3}
-@media (max-width:900px){.index{grid-template-columns:repeat(2,minmax(0,1fr))}.index a,.index a:nth-child(4),.index a:nth-child(5){grid-column:span 1}.index a:first-child{grid-column:1/-1}}
-@media (max-width:560px){.index{grid-template-columns:1fr}.index a:first-child{grid-column:auto}}
-.index a{display:grid;grid-template-rows:auto 1fr;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;color:var(--ink);text-decoration:none;transition:transform .2s ease,border-color .2s}
-.index a:hover{transform:translateY(-3px);border-color:var(--teal)}
-.index .thumb{aspect-ratio:16/10;max-width:100%;overflow:hidden;display:flex;justify-content:center;gap:8px;padding:18px 18px 0}
-.index .thumb img{width:30%;object-fit:cover;object-position:top;border-radius:10px 10px 0 0;box-shadow:0 2px 10px rgba(0,0,0,.12)}
-.index .t-pay{background:#d7ecea}.index .t-stats{background:#e5e1cf}.index .t-ai{background:#e9e4d6}.index .t-wrap{background:#f08a1c}.index .t-av{background:#3d3d3d}
-.index .body{padding:18px 20px 22px;display:grid;gap:6px;align-content:start}
-.index h3{font-size:1.25rem}
-.index p{color:var(--muted);font-size:.95rem;line-height:1.5}
-
-/* case study */
-.case-top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
-@media (max-width:860px){.case-top{grid-template-columns:1fr}}
-.case h2{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:800;margin-block:10px 16px}
-.case .summary{font-size:1.15rem;max-width:60ch}
-.meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;align-self:start}
-.meta div{background:var(--sheet);padding:14px 16px;min-width:0}
-.meta dt{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.meta dd{margin:0;font-size:.95rem;line-height:1.45}
-.meta div.full{grid-column:1/-1}
-
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(20px,3vw,40px);margin-top:44px}
-.cols h3{font-size:1.15rem;margin-bottom:8px}
-.cols p,.cols li{color:var(--muted);font-size:1rem}
-.cols ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
-
-.decisions{margin-top:48px;display:grid;gap:16px;counter-reset:d}
-.decision{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(20px,4vw,48px);align-items:center;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:clamp(18px,3vw,32px)}
-@media (max-width:760px){.decision{grid-template-columns:1fr}}
-.decision h3{font-size:1.3rem;margin-bottom:10px}
-.decision p{color:var(--muted)}
-.decision p+p{margin-top:10px}
-.screens{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,130px),1fr));gap:14px}
-.screens.four{grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr))}
-.screen{margin:0;display:grid;gap:8px;align-content:start;min-width:0}
-.screen img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);background:#fff}
-.screen figcaption{font-size:.82rem;line-height:1.4;color:var(--muted)}
-.rtl-note{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:6px 12px;border:1px dashed var(--line);border-radius:999px;color:var(--muted)}
-
-.notes{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
-.notes li{font-family:var(--f-mono);font-size:.76rem;padding:5px 10px;border-radius:6px;background:var(--marigold-soft);color:var(--ink);border:1px solid color-mix(in srgb,var(--marigold) 35%,transparent)}
-.notes li::before{content:"↳ ";color:var(--marigold)}
-
-.wide{margin-top:16px;background:#3d3d3d;border-radius:var(--r);padding:clamp(12px,2vw,24px)}
-.wide img{width:100%;height:auto;display:block;border-radius:6px}
-.wide figcaption{color:#cfd6d4;margin-top:10px;font-size:.85rem}
-
-.outcome{margin-top:20px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px 20px;align-items:start;padding:clamp(18px,3vw,28px);border-radius:var(--r);background:var(--teal-soft)}
-.outcome .eyebrow{padding-top:4px;color:var(--teal-ink)}
-.outcome p{font-size:1.05rem}
-@media (max-width:520px){.outcome{grid-template-columns:1fr}}
-.outcome>div{display:grid;gap:14px;min-width:0}
-.kpis{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:10px}
-.kpis li{background:var(--sheet);border-radius:10px;padding:12px 14px;font-size:.92rem;line-height:1.4;color:var(--muted)}
-.kpis b{display:block;font-family:var(--f-display);font-size:1.45rem;font-weight:700;color:var(--ink);line-height:1.15;margin-bottom:2px}
-.measure{font-size:.95rem!important;color:var(--muted)}
-.measure b{color:var(--ink);font-weight:600}
-
-/* handoff */
-.handoff{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
-.handoff div{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:22px}
-.handoff h3{font-size:1.1rem;margin-bottom:8px}
-.handoff p{color:var(--muted);font-size:.98rem}
-.handoff .tag{display:inline-block;margin-bottom:12px}
-.quote{margin-top:28px;font-family:var(--f-display);font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:500;line-height:1.3;max-width:34ch;text-wrap:balance}
-.quote span{color:var(--teal)}
-
-/* earlier */
-.earlier{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:18px}
-.earlier article{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:grid;grid-template-rows:auto 1fr}
-.earlier img{width:100%;aspect-ratio:2.3/1;object-fit:cover;display:block;max-width:100%}
-.earlier .body{padding:18px 20px 22px;display:grid;gap:6px;align-content:start}
-.earlier h3{font-size:1.2rem}
-.earlier p{color:var(--muted);font-size:.95rem;line-height:1.5}
-
-/* art + about */
-.art{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
-@media (max-width:820px){.art{grid-template-columns:1fr}}
-.art img{width:100%;height:auto;border-radius:var(--r);display:block}
-.art p{color:var(--muted)}
-.art p+p{margin-top:12px}
-.about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,5vw,64px)}
-@media (max-width:820px){.about{grid-template-columns:1fr}}
-.about p{max-width:62ch}
-.about p+p{margin-top:14px}
-.card{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:grid;gap:16px;align-content:start}
-.card dl{margin:0;display:grid;gap:12px}
-.card dt{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.card dd{margin:2px 0 0}
-.copy{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
-.copy code{font-family:var(--f-mono);font-size:.9rem;user-select:all;word-break:break-all}
-.copy button{font:500 .8rem var(--f-body);padding:6px 12px;border-radius:999px;border:1px solid var(--teal);background:transparent;color:var(--teal);cursor:pointer}
-.copy button:hover{background:var(--teal);color:var(--sheet)}
-footer{border-top:1px solid var(--line)}
-footer .wrap{padding-block:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--muted);font-size:.88rem}
-
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
-html{scroll-behavior:smooth}
-section[id],article[id],aside[id]{scroll-margin-top:72px}
-
-/* hiring-team additions: CTAs, status, case navigation, lightbox */
-.skip{position:absolute;left:-9999px;top:8px;z-index:20;background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:8px}
-.skip:focus{left:12px}
-.nav ul{align-items:center}
-.nav ul a.nav-cta{color:var(--sheet);background:var(--teal);padding:7px 14px;border-radius:999px;font-weight:600}
-.nav ul a.nav-cta:hover{color:var(--sheet);background:color-mix(in srgb,var(--teal) 85%,var(--ink))}
-.status{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:.95rem;color:var(--ink)}
-.status .dot{width:9px;height:9px;border-radius:50%;background:#2fa36b;box-shadow:0 0 0 4px color-mix(in srgb,#2fa36b 22%,transparent);flex:none}
-.status span.sep{color:var(--muted)}
-.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:-14px}
-.btn{display:inline-flex;align-items:center;gap:6px;font:600 .98rem var(--f-body);padding:11px 20px;border-radius:999px;border:1px solid var(--line);background:var(--sheet);color:var(--ink);text-decoration:none;transition:border-color .2s,background .2s}
-.btn:hover{border-color:var(--teal)}
-.btn.primary{background:var(--teal);border-color:var(--teal);color:var(--sheet)}
-.btn.primary:hover{background:color-mix(in srgb,var(--teal) 85%,var(--ink))}
-.index .more{margin-top:6px;font-weight:600;font-size:.92rem;color:var(--teal)}
-.index a:hover .more{text-decoration:underline;text-underline-offset:3px}
-.case-nav{margin-top:40px;padding-top:20px;border-top:1px dashed var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;font-weight:600}
-.case-nav a{text-decoration:none}
-.case-nav a:hover{text-decoration:underline}
-.case-nav .up{color:var(--muted)}
-.zoomable{cursor:zoom-in}
-.zoomable:hover{outline:2px solid var(--teal);outline-offset:2px}
-.zoomable:focus-visible{outline:2px solid var(--marigold);outline-offset:3px}
-.lb{border:0;padding:0;margin:auto;background:transparent;max-width:min(96vw,1400px);max-height:96vh;overflow:visible;color:#e7eeec}
-.lb::backdrop{background:rgba(8,14,13,.88)}
-.lb figure{margin:0;display:grid;gap:12px;justify-items:center}
-.lb img{max-width:min(92vw,1400px);max-height:80vh;width:auto;height:auto;border-radius:10px;background:#fff;display:block}
-.lb figcaption{font-size:.95rem;text-align:center;max-width:60ch;color:#cfd6d4}
-.lb .count{font-family:var(--f-mono);font-size:.75rem;color:#9db0ac;margin-right:8px}
-.lb button{position:fixed;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(20,30,29,.7);color:#fff;font-size:1.3rem;line-height:1;cursor:pointer}
-.lb button:hover{background:rgba(40,60,58,.9)}
-.lb .x{top:16px;right:16px}.lb .prev{left:16px;top:50%;transform:translateY(-50%)}.lb .next{right:16px;top:50%;transform:translateY(-50%)}
-@media (max-width:560px){.lb .prev,.lb .next{top:auto;bottom:16px;transform:none}}
-</style>
-</head><body>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
 
 <a class="skip" href="#work">Skip to case studies</a>
 <nav class="nav" aria-label="Main">
@@ -262,294 +69,30 @@ section[id],article[id],aside[id]{scroll-margin-top:72px}
     <div class="sec-head">
       <span class="eyebrow">Selected work · Taaghche</span>
       <h2>Five projects, each from brief to release</h2>
-      <p>Taaghche's interface is in Persian and reads right to left. I kept the original designs unchanged and added English captions to explain each screen. Click or tap any screen to see it full size.</p>
+      <p>Taaghche's interface is in Persian and reads right to left. I kept the original designs unchanged and added English captions to explain each screen.</p>
     </div>
     <div class="index">
-      <a href="#ai">
+      <a href="work/ai-reading-assistant/">
         <div class="thumb t-ai"><img src="img/ai-01.jpg" alt=""><img src="img/ai-07.jpg" alt=""><img src="img/ai-real9_y-1.jpg" alt=""></div>
-        <div class="body"><span class="mono" style="color:var(--teal)">AI · Product design</span><h3>AI Reading Assistant</h3><p>An LLM chat inside the e-book reader, designed around token cost, trust and content policy.</p><span class="more">Read case study →</span></div>
+        <div class="body"><span class="mono" style="color:var(--teal)">AI · Product design</span><h3>AI Reading Assistant</h3><p>An LLM chat inside the e-book reader, designed around token cost, trust and content policy.</p><span class="meta-line"><span class="more">Read case study →</span><span class="mono readtime">5 min read</span></span></div>
       </a>
-      <a href="#checkout">
+      <a href="work/checkout-pay-later/">
         <div class="thumb t-pay"><img src="img/pay-phone.jpg" alt=""><img src="img/pay-snapp.jpg" alt=""><img src="img/pay-zero.jpg" alt=""></div>
-        <div class="body"><span class="mono" style="color:var(--teal)">Payments · Mobile + web</span><h3>Checkout &amp; Pay Later</h3><p>A subscription checkout with discounts, wallet credit, bank payment and buy-now-pay-later installments.</p><span class="more">Read case study →</span></div>
+        <div class="body"><span class="mono" style="color:var(--teal)">Payments · Mobile + web</span><h3>Checkout &amp; Pay Later</h3><p>A subscription checkout with discounts, wallet credit, bank payment and buy-now-pay-later installments.</p><span class="meta-line"><span class="more">Read case study →</span><span class="mono readtime">3 min read</span></span></div>
       </a>
-      <a href="#stats">
+      <a href="work/reading-stats/">
         <div class="thumb t-stats"><img src="img/cal-month.jpg" alt=""><img src="img/cal-bars.jpg" alt=""><img src="img/cal-year.jpg" alt=""></div>
-        <div class="body"><span class="mono" style="color:var(--teal)">Data · Dashboard</span><h3>Reading Stats &amp; Goals</h3><p>A personal dashboard with a calendar heatmap, charts and daily goals.</p><span class="more">Read case study →</span></div>
+        <div class="body"><span class="mono" style="color:var(--teal)">Data · Dashboard</span><h3>Reading Stats &amp; Goals</h3><p>A personal dashboard with a calendar heatmap, charts and daily goals.</p><span class="meta-line"><span class="more">Read case study →</span><span class="mono readtime">3 min read</span></span></div>
       </a>
-      <a href="#wrapup">
+      <a href="work/year-in-reading/">
         <div class="thumb t-wrap"><img src="img/wrap-cover.jpg" alt=""><img src="img/wrap-slide-04-1.jpg" alt=""><img src="img/wrap-slide-10.jpg" alt=""></div>
-        <div class="body"><span class="mono" style="color:var(--teal)">Engagement · Data storytelling</span><h3>Year in Reading Wrap-up</h3><p>A story-style recap of each reader's year, ranked against their peers.</p><span class="more">Read case study →</span></div>
+        <div class="body"><span class="mono" style="color:var(--teal)">Engagement · Data storytelling</span><h3>Year in Reading Wrap-up</h3><p>A story-style recap of each reader's year, ranked against their peers.</p><span class="meta-line"><span class="more">Read case study →</span><span class="mono readtime">4 min read</span></span></div>
       </a>
-      <a href="#avatars">
+      <a href="work/literary-avatars/">
         <div class="thumb t-av"><img src="img/av-091625-1.jpg" alt=""><img src="img/av-picker.jpg" alt=""><img src="img/av-102519-1.jpg" alt=""></div>
-        <div class="body"><span class="mono" style="color:var(--teal)">Brand · Illustration · Research</span><h3>Literary Avatars</h3><p>Book-shaped characters that replaced the generic profile placeholders, validated with a user survey.</p><span class="more">Read case study →</span></div>
+        <div class="body"><span class="mono" style="color:var(--teal)">Brand · Illustration · Research</span><h3>Literary Avatars</h3><p>Book-shaped characters that replaced the generic profile placeholders, validated with a user survey.</p><span class="meta-line"><span class="more">Read case study →</span><span class="mono readtime">3 min read</span></span></div>
       </a>
     </div>
-  </div>
-</section>
-
-<!-- CASE 1 -->
-<section class="case" id="ai">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <span class="eyebrow">Case study 01</span>
-        <h2>AI Reading Assistant</h2>
-        <p class="summary">The product team wanted readers to be able to ask questions about what they were reading, without leaving the e-book. I designed the whole experience, from the first idea to the shipped feature. That included the entry point, the chat, usage limits, feedback, and every error and empty state.</p>
-      </div>
-      <dl class="meta">
-        <div><dt>Role</dt><dd>Sole product designer</dd></div>
-        <div><dt>Platform</dt><dd>EPUB reader, mobile app</dd></div>
-        <div><dt>Worked with</dt><dd>Product, backend and mobile developers</dd></div>
-        <div><dt>Status</dt><dd>Shipped, labelled as an experimental feature</dd></div>
-        <div class="full"><dt>Scope</dt><dd>Problem framing, flows, cost and policy constraints, UI, states, hand-off, design QA</dd></div>
-      </dl>
-    </div>
-
-    <div class="cols">
-      <div><h3>The challenge</h3><p>Every message costs tokens, so long open-ended chats get expensive fast. Answers from a language model can be wrong. The feature also had to follow content policies. The design had to keep conversations short and focused while still feeling useful and friendly.</p></div>
-      <div><h3>What I did</h3><ul><li>Mapped where a question naturally starts: a passage the reader has just selected</li><li>Explored three placements for the entry point in the text-selection menu</li><li>Designed visible usage limits that feel like an allowance rather than a block</li><li>Wrote the trust messaging and designed the answer-feedback loop</li><li>Specified every state for developers, then checked the build against the designs</li></ul></div>
-    </div>
-
-    <div class="decisions">
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Entry point</span><h3>Start from the reader's own selection</h3><p>The assistant opens from the menu that appears when a reader selects text. I explored three toolbar layouts for where the new action sits next to highlight, copy, share and translate. The goal was an action people would find without crowding the tools they already use.</p></div>
-        <div class="screens">
-          <figure class="screen"><img src="img/ai-option-01.jpg" alt="Selection toolbar option 1" loading="lazy"><figcaption>Option 1: AI action added to the color row</figcaption></figure>
-          <figure class="screen"><img src="img/ai-option-02.jpg" alt="Selection toolbar option 2" loading="lazy"><figcaption>Option 2: banner prompt at the bottom of the page</figcaption></figure>
-          <figure class="screen"><img src="img/ai-option-4.jpg" alt="Selection toolbar option 4" loading="lazy"><figcaption>Option 3: icon-only toolbar with an AI action</figcaption></figure>
-        </div>
-      </div>
-
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Focus</span><h3>Pin the passage, suggest the question</h3><p>The selected passage stays pinned at the top of the chat, so every answer has a clear context. One-tap prompts like <i>“Explain this part”</i> and <i>“Say this more simply”</i> cover the most common needs. They keep messages short, which keeps costs down.</p></div>
-        <div class="screens">
-          <figure class="screen"><img src="img/ai-01.jpg" alt="Assistant chat with suggested prompts" loading="lazy"><figcaption>First answer with suggested follow-ups</figcaption></figure>
-          <figure class="screen"><img src="img/ai-03.jpg" alt="Conversation continuing" loading="lazy"><figcaption>Follow-up: “What does the author mean?”</figcaption></figure>
-          <figure class="screen"><img src="img/ai-25.jpg" alt="Empty state" loading="lazy"><figcaption>Empty state: “Write your question so I can help”</figcaption></figure>
-        </div>
-      </div>
-
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Cost</span><h3>Make the limits visible and fair</h3><p>Instead of cutting people off without warning, readers see a weekly allowance, such as <i>“7 of 10 messages left”</i>, and when it resets. Each conversation also has a cap. When a reader hits it, a clear message invites them to start a new chat, which keeps the context window short.</p></div>
-        <div class="screens">
-          <figure class="screen"><img src="img/ai-07.jpg" alt="Weekly usage meter" loading="lazy"><figcaption>Weekly usage: messages left and reset date</figcaption></figure>
-          <figure class="screen"><img src="img/ai-17.jpg" alt="Conversation limit reached" loading="lazy"><figcaption>Conversation limit reached, with a prompt to start a new chat</figcaption></figure>
-          <figure class="screen"><img src="img/ai-05.jpg" alt="Conversation history" loading="lazy"><figcaption>Conversation history for each book</figcaption></figure>
-        </div>
-      </div>
-
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Trust</span><h3>Be honest about what AI can and can't do</h3><p>An “Experimental” badge and an info sheet explain that answers may be inaccurate. They also say the assistant only sees the selected text, not the whole book. Thumbs up and down on every answer, plus an optional “What was wrong with this answer?” form, give the product team a steady stream of quality signals.</p></div>
-        <div class="screens">
-          <figure class="screen"><img src="img/ai-06.jpg" alt="About the assistant info sheet" loading="lazy"><figcaption>“About the assistant” info sheet</figcaption></figure>
-          <figure class="screen"><img src="img/ai-21.jpg" alt="Feedback form" loading="lazy"><figcaption>Feedback after a thumbs-down</figcaption></figure>
-          <figure class="screen"><img src="img/ai-02.jpg" alt="Feedback inline" loading="lazy"><figcaption>Inline feedback on an answer</figcaption></figure>
-        </div>
-      </div>
-
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Hand-off · Design QA</span><h3>From Figma to the live app</h3><p>I reviewed the developer builds against the designs and logged precise fixes. The notes on the right are from that review round. The final screens are from the shipped app, with the new <i>“Summarize this part”</i> action.</p>
-          <ul class="notes" aria-label="Design review notes">
-            <li>Add copy icon to answers</li><li>Message padding → 16</li><li>Resize icon + experimental badge</li><li>AI error message state</li><li>Long-chat behavior</li><li>No-suggestion state</li><li>Loading animation</li>
-          </ul>
-        </div>
-        <div class="screens">
-          <figure class="screen"><img src="img/ai-real9_y-1.jpg" alt="Shipped app screenshot" loading="lazy"><figcaption>Shipped: “Summarize this part”</figcaption></figure>
-          <figure class="screen"><img src="img/ai-real7_y-1.jpg" alt="Shipped app screenshot" loading="lazy"><figcaption>Shipped: answer with follow-up chip</figcaption></figure>
-        </div>
-      </div>
-    </div>
-
-    <p class="rtl-note mono">Interface in Persian, read right to left · captions translated</p>
-    <div class="outcome"><span class="eyebrow">Outcome</span><div><p>The assistant shipped inside the reader as an experimental feature. Usage limits and focused prompts were part of the design from the start to control token cost, and the feedback on every answer gives the product team a steady measure of answer quality.</p><ul class="kpis"><li><b>3</b>entry-point layouts explored before choosing one</li><li><b>14</b>screens and states specified, including errors and empty states</li><li><b>7</b>fixes logged in design QA before release</li></ul><p class="measure"><b>What I’d measure:</b> the thumbs-up rate on answers, the average number of messages per conversation (which drives token cost), and how many readers use the assistant again within a week.</p></div></div>
-    <nav class="case-nav" aria-label="Case study navigation"><a class="up" href="#work">↑ All projects</a><a href="#checkout">Next: Checkout &amp; Pay Later →</a></nav>
-  </div>
-</section>
-
-<!-- CASE: CHECKOUT -->
-<section class="case" id="checkout">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <span class="eyebrow">Case study 02</span>
-        <h2>Checkout &amp; Pay Later</h2>
-        <p class="summary">Taaghche added Snapp Pay, a buy-now-pay-later provider, to its subscription checkout. I redesigned the checkout on mobile and web so readers always know exactly what they will pay, how and when, before they tap the button.</p>
-      </div>
-      <dl class="meta">
-        <div><dt>Role</dt><dd>Sole product designer</dd></div>
-        <div><dt>Platforms</dt><dd>Mobile and desktop web</dd></div>
-        <div><dt>Worked with</dt><dd>Product, payments and front-end developers</dd></div>
-        <div><dt>Status</dt><dd>Built and tested in staging</dd></div>
-        <div class="full"><dt>Scope</dt><dd>Plans page, wireframes, payment-method states, price breakdown, responsive layouts, hand-off</dd></div>
-      </dl>
-    </div>
-
-    <div class="decisions">
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Clarity</span><h3>The total is never a surprise</h3><p>Discount codes and wallet credit sit above the payment options and show the amount saved right away. A price breakdown lists price, discount, wallet credit and the amount to pay. On desktop it stays next to the form; on mobile it moves directly above the button.</p></div>
-        <figure class="screen"><img src="img/pay-desktop.jpg" alt="Desktop checkout with order summary" loading="lazy"><figcaption>Desktop: payment options on the left, order summary always visible</figcaption></figure>
-      </div>
-
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Control</span><h3>The button says what will happen</h3><p>The main button changes with the chosen method and shows the exact amount: <i>“Pay online · 118,800”</i>, or <i>“Pay with Snapp Pay · 29,700”</i> for the first of four interest-free installments. Readers always know what they are agreeing to before they confirm.</p><p>When installments are not available for an amount, that option is disabled and explains why, instead of failing after the tap. When discounts cover the full price, the payment methods switch off and the button simply reads <i>“Get subscription”</i>.</p></div>
-        <div class="screens four">
-          <figure class="screen"><img src="img/pay-bank.jpg" alt="Bank payment selected" loading="lazy"><figcaption>Bank gateway, with wallet credit applied</figcaption></figure>
-          <figure class="screen"><img src="img/pay-snapp.jpg" alt="Installments selected" loading="lazy"><figcaption>Pay in 4: button shows the first installment</figcaption></figure>
-          <figure class="screen"><img src="img/pay-inactive.jpg" alt="Installments unavailable" loading="lazy"><figcaption>Installments unavailable for this amount</figcaption></figure>
-          <figure class="screen"><img src="img/pay-zero.jpg" alt="Fully covered by discount" loading="lazy"><figcaption>Fully covered: nothing to pay</figcaption></figure>
-        </div>
-      </div>
-    </div>
-    <p class="rtl-note mono">Interface in Persian, read right to left · captions translated</p>
-    <div class="outcome"><span class="eyebrow">Outcome</span><div><p>Every payment situation has a designed state, so no reader reaches a dead end or an unexpected total. The checkout was built and tested in staging on mobile and desktop.</p><ul class="kpis"><li><b>4</b>payment states designed: bank, pay in 4, unavailable, fully covered</li><li><b>2</b>responsive layouts, mobile and desktop</li><li><b>4</b>lines in the price breakdown: price, discount, wallet credit, amount to pay</li></ul><p class="measure"><b>What I’d measure:</b> checkout completion rate, the share of subscriptions paid in installments, and support tickets about unexpected charges.</p></div></div>
-    <nav class="case-nav" aria-label="Case study navigation"><a class="up" href="#work">↑ All projects</a><a href="#stats">Next: Reading Stats &amp; Goals →</a></nav>
-  </div>
-</section>
-
-<!-- CASE: STATS -->
-<section class="case" id="stats">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <span class="eyebrow">Case study 03</span>
-        <h2>Reading Stats &amp; Goals</h2>
-        <p class="summary">A personal dashboard that turns reading activity into something readers can scan at a glance and act on. It combines a daily goal, a monthly calendar, a yearly heatmap and a bar-chart view, with summaries for today, this month and this year.</p>
-      </div>
-      <dl class="meta">
-        <div><dt>Role</dt><dd>Sole product designer</dd></div>
-        <div><dt>Platform</dt><dd>Mobile app, light and dark themes</dd></div>
-        <div><dt>Worked with</dt><dd>Product and mobile developers</dd></div>
-        <div><dt>Type</dt><dd>Data-driven feature</dd></div>
-        <div class="full"><dt>Scope</dt><dd>Information architecture, chart and calendar views, goal setting, empty states, interaction rules for developers</dd></div>
-      </dl>
-    </div>
-
-    <div class="decisions">
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Overview first</span><h3>Summary on top, detail on demand</h3><p>A progress bar for today's goal leads the page. Below it, a monthly/yearly switch changes the calendar, and each day's color shows how much the reader read. Expandable rows give the exact time for the selected day and period.</p><p>I wrote down the interaction rules for developers. For example, bar heights stay on one scale within a month or year, and when you move to another month the last day is selected by default.</p></div>
-        <div class="screens four">
-          <figure class="screen"><img src="img/cal-month.jpg" alt="Monthly calendar heatmap" loading="lazy"><figcaption>Monthly calendar heatmap</figcaption></figure>
-          <figure class="screen"><img src="img/cal-bars.jpg" alt="Bar chart against goal" loading="lazy"><figcaption>Chart view with goal line</figcaption></figure>
-          <figure class="screen"><img src="img/cal-year.jpg" alt="Yearly heatmap" loading="lazy"><figcaption>Year at a glance</figcaption></figure>
-          <figure class="screen"><img src="img/cal-goal.jpg" alt="Goal reached days" loading="lazy"><figcaption>Days where the goal was reached</figcaption></figure>
-        </div>
-      </div>
-    </div>
-    <p class="rtl-note mono">Interface in Persian, read right to left · captions translated</p>
-    <div class="outcome"><span class="eyebrow">Outcome</span><div><p>Readers get one page that answers “how am I doing?” at a glance, with detail one tap away. Written interaction rules meant developers did not have to guess how charts and selections behave.</p><ul class="kpis"><li><b>4</b>views: month, chart, year and goal</li><li><b>2</b>themes, light and dark</li><li><b>3</b>summary periods: today, this month and this year</li></ul><p class="measure"><b>What I’d measure:</b> the share of readers who set a daily goal, how many days a week they reach it, and how often they come back to the stats page.</p></div></div>
-    <nav class="case-nav" aria-label="Case study navigation"><a class="up" href="#work">↑ All projects</a><a href="#wrapup">Next: Year in Reading Wrap-up →</a></nav>
-  </div>
-</section>
-
-<!-- CASE 2 -->
-<section class="case" id="wrapup">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <span class="eyebrow">Case study 04</span>
-        <h2>Year in Reading Wrap-up</h2>
-        <p class="summary">At the new year, every reader got a personal, story-style recap of their reading. It showed how much they read, when they read, what they loved, and how they compared with other Taaghche readers. The recap was built to be shared.</p>
-      </div>
-      <dl class="meta">
-        <div><dt>Role</dt><dd>Sole product designer</dd></div>
-        <div><dt>Format</dt><dd>Full-screen story slider with share on every slide</dd></div>
-        <div><dt>Worked with</dt><dd>Product, backend and front-end developers, marketing</dd></div>
-        <div><dt>Season</dt><dd>Persian new year (Nowruz) 1404</dd></div>
-        <div class="full"><dt>Scope</dt><dd>Concept, narrative structure, data feasibility, visual direction, data-driven layouts, hand-off</dd></div>
-      </dl>
-    </div>
-
-    <div class="cols">
-      <div><h3>Designing with the data, not just on top of it</h3><p>A recap is only as good as the data behind it. I worked closely with the backend developers to find out which statistics we could calculate reliably. One example was how precisely we could rank each reader against their peers, as in <i>“more than 93% of Taaghche users”</i>. The story was then shaped around what was technically achievable.</p></div>
-      <div><h3>Ten chapters, one story</h3><ul><li><b>Time</b>: minutes read · <b>Commitment</b>: longest reading streak</li><li><b>Progress</b>: change from last year · <b>Book time</b>: your reading persona</li><li><b>Voices</b>: audiobook minutes · <b>Silence</b>: your longest book</li><li><b>Favorites</b>: top authors, narrators, publishers · <b>Seasons</b></li><li><b>Unlimited</b>: subscription value · <b>Sustainability</b>: paper and CO₂ saved</li></ul></div>
-    </div>
-
-    <div class="decisions">
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Visual direction</span><h3>A scrapbook of the year</h3><p>Grid paper, tape, polaroids and pressed flowers turn statistics into something that feels personal and collectible. Big numbers lead every slide. A chapter label and progress bars at the top tell readers where they are in the story.</p></div>
-        <div class="screens four">
-          <figure class="screen"><img src="img/wrap-cover.jpg" alt="Wrap-up cover" loading="lazy"><figcaption>Cover: “Your 1404 report”</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-01.jpg" alt="Minutes read" loading="lazy"><figcaption>Time: minutes read, with peer rank</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-02.jpg" alt="Reading streak" loading="lazy"><figcaption>Commitment: days read in a row</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-03.jpg" alt="Progress" loading="lazy"><figcaption>Progress: % more than last year</figcaption></figure>
-        </div>
-      </div>
-
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Personalization</span><h3>What kind of reader are you?</h3><p>Each reader gets a persona based on the time of day they read most: early-bird rooster, sunny afternoon cat, calm night panda, night owl and more. A time-of-day scale under each card shows why they got that result.</p></div>
-        <div class="screens four">
-          <figure class="screen"><img src="img/wrap-slide-04.jpg" alt="Morning persona" loading="lazy"><figcaption>Morning: the early bird</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-04-1.jpg" alt="Evening persona" loading="lazy"><figcaption>Evening: calm and deep</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-04-3.jpg" alt="Night persona" loading="lazy"><figcaption>Late night: the night owl</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-07-2.jpg" alt="Top authors" loading="lazy"><figcaption>Favorites: most-read authors</figcaption></figure>
-        </div>
-      </div>
-
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Edge cases</span><h3>Layouts that survive real data</h3><p>Real users produce very different numbers. I designed and tested variants for values from four to six digits, for one to three books per season, and for an empty season. Every reader's version holds together, not only the ideal one.</p></div>
-        <div class="screens four">
-          <figure class="screen"><img src="img/wrap-slide-06.jpg" alt="Longest book" loading="lazy"><figcaption>Silence: longest book, with a quote</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-08.jpg" alt="Seasons" loading="lazy"><figcaption>Seasons: what you read each season</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-09.jpg" alt="Subscription value" loading="lazy"><figcaption>Unlimited: books and money saved</figcaption></figure>
-          <figure class="screen"><img src="img/wrap-slide-10.jpg" alt="Sustainability" loading="lazy"><figcaption>Sustainability: trees, water and CO₂ saved</figcaption></figure>
-        </div>
-      </div>
-    </div>
-
-    <p class="rtl-note mono">Interface in Persian, read right to left · captions translated</p>
-    <div class="outcome"><span class="eyebrow">Outcome</span><div><p>The wrap-up turned a year of reading data into a personal, shareable story for each reader. Because feasibility was agreed with the backend team before the visuals were polished, every statistic in the design could actually be calculated.</p><ul class="kpis"><li><b>10</b>story chapters, each with its own share action</li><li><b>4–6</b>digit values tested in every number layout</li><li><b>0–3</b>books per season covered, including the empty season</li></ul><p class="measure"><b>What I’d measure:</b> how many readers reach the last slide, the share rate for each slide, and new visits that come from shared stories.</p></div></div>
-    <nav class="case-nav" aria-label="Case study navigation"><a class="up" href="#work">↑ All projects</a><a href="#avatars">Next: Literary Avatars →</a></nav>
-  </div>
-</section>
-
-<!-- CASE 3 -->
-<section class="case" id="avatars">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <span class="eyebrow">Case study 05</span>
-        <h2>Literary Avatars</h2>
-        <p class="summary">Profiles on Taaghche used three generic placeholder figures. I designed and illustrated a set of avatars that combine the brand with what readers love: book-shaped characters drawn from Persian epics and world literature. They appear on the profile page and next to every user review.</p>
-      </div>
-      <dl class="meta">
-        <div><dt>Role</dt><dd>Designer and illustrator</dd></div>
-        <div><dt>Platforms</dt><dd>Android, iOS and web</dd></div>
-        <div><dt>Research</dt><dd>User survey and preference test</dd></div>
-        <div><dt>Status</dt><dd>Handed off and implemented</dd></div>
-        <div class="full"><dt>Scope</dt><dd>Concept exploration, character illustration, avatar picker UX, user research, cross-platform hand-off</dd></div>
-      </dl>
-    </div>
-
-    <div class="decisions">
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Before</span><h3>A profile with no personality</h3><p>The profile header, the avatar picker and user reviews all used the same three anonymous figures. For a product built around stories, it was a missed chance for readers to show who they are.</p></div>
-        <div class="screens">
-          <figure class="screen"><img src="img/av-091625-1.jpg" alt="Old profile header" loading="lazy"><figcaption>Profile with a default avatar</figcaption></figure>
-          <figure class="screen"><img src="img/av-102243-1.jpg" alt="Old avatar picker" loading="lazy"><figcaption>Picker with three generic options</figcaption></figure>
-          <figure class="screen"><img src="img/av-102519-1.jpg" alt="Review with avatar" loading="lazy"><figcaption>Avatars appear next to user reviews</figcaption></figure>
-        </div>
-      </div>
-    </div>
-    <figure class="wide">
-      <img src="img/av-sketch.jpg" alt="Board of early avatar studies: book creatures, literary characters, Persian poets and epic heroes" loading="lazy">
-      <figcaption class="mono">Early studies: book creatures, famous literary characters, Persian poets and Shahnameh heroes, narrowed down to one book-shaped family</figcaption>
-    </figure>
-
-    <div class="decisions">
-      <div class="decision">
-        <div><span class="mono" style="color:var(--marigold-ink)">Research</span><h3>Testing before building</h3><p>The team worried about how readers would react to character avatars. Before any development started, I showed the set to users in a survey and preference test. The feedback was very positive, so the design moved to development with confidence.</p><p>The final set mixes Persian heroes like Rostam, Simurgh and Gordafarid with world-literature favorites like Alice, the Little Prince and Anne of Green Gables. Every character is drawn as a book, so the set reads clearly as Taaghche.</p></div>
-        <div class="screens">
-          <figure class="screen"><img src="img/av-picker.jpg" alt="New avatar picker" loading="lazy"><figcaption>New picker: “Choose your avatar”</figcaption></figure>
-          <figure class="screen"><img src="img/av-taaghche-prototype.jpg" alt="Profile prototype dark mode" loading="lazy"><figcaption>Profile prototype in dark mode</figcaption></figure>
-        </div>
-      </div>
-    </div>
-
-    <p class="rtl-note mono">Interface in Persian, read right to left · captions translated</p>
-    <div class="outcome"><span class="eyebrow">Outcome</span><div><p>The survey and user tests confirmed the direction. I handed the full set and the picker flow to the developers, and they implemented it on Android, iOS and web.</p><ul class="kpis"><li><b>3 → 22</b>generic placeholders replaced by illustrated literary characters</li><li><b>1</b>user survey run before any development started</li><li><b>3</b>platforms: Android, iOS and web</li></ul><p class="measure"><b>What I’d measure:</b> the share of readers who choose an avatar, and whether readers with a custom avatar post more reviews.</p></div></div>
-    <nav class="case-nav" aria-label="Case study navigation"><a class="up" href="#work">↑ All projects</a><a href="#handoff">Next: How I work →</a></nav>
   </div>
 </section>
 
@@ -621,37 +164,6 @@ section[id],article[id],aside[id]{scroll-margin-top:72px}
 
 <footer><div class="wrap"><span>© Setareh Sadeghi · <a href="mailto:setareh.sadeghi1992@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/setareh-sadeghi-basedinthenetherlands/" target="_blank" rel="noopener">LinkedIn</a></span><span>Taaghche work shown with original Persian interfaces</span></div></footer>
 
-<script>
-document.getElementById('copyBtn').addEventListener('click',function(){
-  var b=this, t=document.getElementById('email').textContent;
-  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected';}
-  try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1800)},sel);}catch(e){sel();}
-});
-
-/* Lightbox: screens are small in the layout, so reviewers can open any of them full size and step through the case. */
-(function(){
-  if(!window.HTMLDialogElement)return;
-  var lb=document.createElement('dialog');lb.className='lb';lb.setAttribute('aria-label','Enlarged screen');
-  lb.innerHTML='<figure><img alt=""><figcaption><span class="count"></span><span class="cap"></span></figcaption></figure>'+
-    '<button type="button" class="x" aria-label="Close">✕</button><button type="button" class="prev" aria-label="Previous screen">←</button><button type="button" class="next" aria-label="Next screen">→</button>';
-  document.body.appendChild(lb);
-  var big=lb.querySelector('img'),cap=lb.querySelector('.cap'),cnt=lb.querySelector('.count'),group=[],i=0,opener=null;
-  function show(n){i=(n+group.length)%group.length;var im=group[i],fc=im.closest('figure').querySelector('figcaption');
-    big.src=im.currentSrc||im.src;big.alt=im.alt;cap.textContent=fc?fc.textContent:im.alt;cnt.textContent=(i+1)+' / '+group.length;
-    lb.querySelector('.prev').hidden=lb.querySelector('.next').hidden=group.length<2;}
-  function open(im){var sec=im.closest('section');group=[].slice.call(sec.querySelectorAll('.zoomable'));opener=im;show(group.indexOf(im));lb.showModal();}
-  document.querySelectorAll('.screen img,.wide img,.cast img').forEach(function(im){
-    im.classList.add('zoomable');im.tabIndex=0;im.setAttribute('role','button');im.setAttribute('aria-label','Enlarge: '+im.alt);
-    im.addEventListener('click',function(){open(im)});
-    im.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(im)}});
-  });
-  lb.querySelector('.x').onclick=function(){lb.close()};
-  lb.querySelector('.prev').onclick=function(){show(i-1)};
-  lb.querySelector('.next').onclick=function(){show(i+1)};
-  lb.addEventListener('click',function(e){if(e.target===lb||e.target.tagName==='FIGURE')lb.close()});
-  lb.addEventListener('keydown',function(e){if(e.key==='ArrowRight')show(i+1);if(e.key==='ArrowLeft')show(i-1)});
-  lb.addEventListener('close',function(){if(opener)opener.focus()});
-})();
-</script>
+<script src="assets/site.js"></script>
 
 </body></html>

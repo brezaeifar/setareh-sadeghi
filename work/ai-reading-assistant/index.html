@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AI Reading Assistant · Setareh Sadeghi, UI/UX Designer</title>
+<meta name="description" content="The product team wanted readers to be able to ask questions about what they were reading, without leaving the e-book. I designed the whole experience, from the first idea to the shipped feature. That included the entry point, the chat, usage limits, feedback, and every error and empty state.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brezaeifar.github.io/setareh-sadeghi/work/ai-reading-assistant/">
+<meta property="og:title" content="AI Reading Assistant · Setareh Sadeghi, UI/UX Designer">
+<meta property="og:description" content="The product team wanted readers to be able to ask questions about what they were reading, without leaving the e-book. I designed the whole experience, from the first idea to the shipped feature. That included the entry point, the chat, usage limits, feedback, and every error and empty state.">
+<meta property="og:image" content="https://brezaeifar.github.io/setareh-sadeghi/img/ai-01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://brezaeifar.github.io/setareh-sadeghi/work/ai-reading-assistant/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e7c77'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='19' text-anchor='middle' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to case study</a>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../">Setareh Sadeghi</a>
+    <ul>
+      <li><a href="../../#work">Work</a></li>
+      <li class="opt"><a href="../../#handoff">Process</a></li>
+      <li class="opt"><a href="../../#art">Art</a></li>
+      <li class="opt"><a href="../../#about">About</a></li>
+      <li><a href="../../cv.html">CV</a></li>
+      <li><a class="nav-cta" href="../../#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="case-bar">
+  <div class="wrap">
+    <a class="back" href="../../#work">← All work</a>
+    <ol class="steps" aria-label="Case studies"><li><a href="../../work/ai-reading-assistant/" aria-current="page"><span>01</span><b>AI Reading Assistant</b></a></li><li><a href="../../work/checkout-pay-later/"><span>02</span><b>Checkout & Pay Later</b></a></li><li><a href="../../work/reading-stats/"><span>03</span><b>Reading Stats & Goals</b></a></li><li><a href="../../work/year-in-reading/"><span>04</span><b>Year in Reading Wrap-up</b></a></li><li><a href="../../work/literary-avatars/"><span>05</span><b>Literary Avatars</b></a></li></ol>
+  </div>
+</div>
+
+<main id="content" class="case-page">
+<section class="case" id="ai">
+  <div class="wrap">
+    <div class="case-top">
+      <div>
+        <span class="eyebrow">Case study 01 of 05<span class="readtime">· 5 min read</span></span>
+        <h1>AI Reading Assistant</h1>
+        <p class="summary">The product team wanted readers to be able to ask questions about what they were reading, without leaving the e-book. I designed the whole experience, from the first idea to the shipped feature. That included the entry point, the chat, usage limits, feedback, and every error and empty state.</p>
+      </div>
+      <dl class="meta">
+        <div><dt>Role</dt><dd>Sole product designer</dd></div>
+        <div><dt>Platform</dt><dd>EPUB reader, mobile app</dd></div>
+        <div><dt>Worked with</dt><dd>Product, backend and mobile developers</dd></div>
+        <div><dt>Status</dt><dd>Shipped, labelled as an experimental feature</dd></div>
+        <div class="full"><dt>Scope</dt><dd>Problem framing, flows, cost and policy constraints, UI, states, hand-off, design QA</dd></div>
+      </dl>
+    </div>
+
+    <div class="cols">
+      <div><h3>The challenge</h3><p>Every message costs tokens, so long open-ended chats get expensive fast. Answers from a language model can be wrong. The feature also had to follow content policies. The design had to keep conversations short and focused while still feeling useful and friendly.</p></div>
+      <div><h3>What I did</h3><ul><li>Mapped where a question naturally starts: a passage the reader has just selected</li><li>Explored three placements for the entry point in the text-selection menu</li><li>Designed visible usage limits that feel like an allowance rather than a block</li><li>Wrote the trust messaging and designed the answer-feedback loop</li><li>Specified every state for developers, then checked the build against the designs</li></ul></div>
+    </div>
+
+    <div class="decisions">
+      <div class="decision">
+        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Entry point</span><h3>Start from the reader's own selection</h3><p>The assistant opens from the menu that appears when a reader selects text. I explored three toolbar layouts for where the new action sits next to highlight, copy, share and translate. The goal was an action people would find without crowding the tools they already use.</p></div>
+        <div class="screens">
+          <figure class="screen"><img src="../../img/ai-option-01.jpg" alt="Selection toolbar option 1" loading="lazy"><figcaption>Option 1: AI action added to the color row</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-option-02.jpg" alt="Selection toolbar option 2" loading="lazy"><figcaption>Option 2: banner prompt at the bottom of the page</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-option-4.jpg" alt="Selection toolbar option 4" loading="lazy"><figcaption>Option 3: icon-only toolbar with an AI action</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="decision">
+        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Focus</span><h3>Pin the passage, suggest the question</h3><p>The selected passage stays pinned at the top of the chat, so every answer has a clear context. One-tap prompts like <i>“Explain this part”</i> and <i>“Say this more simply”</i> cover the most common needs. They keep messages short, which keeps costs down.</p></div>
+        <div class="screens">
+          <figure class="screen"><img src="../../img/ai-01.jpg" alt="Assistant chat with suggested prompts" loading="lazy"><figcaption>First answer with suggested follow-ups</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-03.jpg" alt="Conversation continuing" loading="lazy"><figcaption>Follow-up: “What does the author mean?”</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-25.jpg" alt="Empty state" loading="lazy"><figcaption>Empty state: “Write your question so I can help”</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="decision">
+        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Cost</span><h3>Make the limits visible and fair</h3><p>Instead of cutting people off without warning, readers see a weekly allowance, such as <i>“7 of 10 messages left”</i>, and when it resets. Each conversation also has a cap. When a reader hits it, a clear message invites them to start a new chat, which keeps the context window short.</p></div>
+        <div class="screens">
+          <figure class="screen"><img src="../../img/ai-07.jpg" alt="Weekly usage meter" loading="lazy"><figcaption>Weekly usage: messages left and reset date</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-17.jpg" alt="Conversation limit reached" loading="lazy"><figcaption>Conversation limit reached, with a prompt to start a new chat</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-05.jpg" alt="Conversation history" loading="lazy"><figcaption>Conversation history for each book</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="decision">
+        <div><span class="mono" style="color:var(--marigold-ink)">Decision · Trust</span><h3>Be honest about what AI can and can't do</h3><p>An “Experimental” badge and an info sheet explain that answers may be inaccurate. They also say the assistant only sees the selected text, not the whole book. Thumbs up and down on every answer, plus an optional “What was wrong with this answer?” form, give the product team a steady stream of quality signals.</p></div>
+        <div class="screens">
+          <figure class="screen"><img src="../../img/ai-06.jpg" alt="About the assistant info sheet" loading="lazy"><figcaption>“About the assistant” info sheet</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-21.jpg" alt="Feedback form" loading="lazy"><figcaption>Feedback after a thumbs-down</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-02.jpg" alt="Feedback inline" loading="lazy"><figcaption>Inline feedback on an answer</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="decision">
+        <div><span class="mono" style="color:var(--marigold-ink)">Hand-off · Design QA</span><h3>From Figma to the live app</h3><p>I reviewed the developer builds against the designs and logged precise fixes. The notes on the right are from that review round. The final screens are from the shipped app, with the new <i>“Summarize this part”</i> action.</p>
+          <ul class="notes" aria-label="Design review notes">
+            <li>Add copy icon to answers</li><li>Message padding → 16</li><li>Resize icon + experimental badge</li><li>AI error message state</li><li>Long-chat behavior</li><li>No-suggestion state</li><li>Loading animation</li>
+          </ul>
+        </div>
+        <div class="screens">
+          <figure class="screen"><img src="../../img/ai-real9_y-1.jpg" alt="Shipped app screenshot" loading="lazy"><figcaption>Shipped: “Summarize this part”</figcaption></figure>
+          <figure class="screen"><img src="../../img/ai-real7_y-1.jpg" alt="Shipped app screenshot" loading="lazy"><figcaption>Shipped: answer with follow-up chip</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <p class="rtl-note mono">Interface in Persian, read right to left · captions translated</p>
+    <div class="outcome"><span class="eyebrow">Outcome</span><div><p>The assistant shipped inside the reader as an experimental feature. Usage limits and focused prompts were part of the design from the start to control token cost, and the feedback on every answer gives the product team a steady measure of answer quality.</p><ul class="kpis"><li><b>3</b>entry-point layouts explored before choosing one</li><li><b>14</b>screens and states specified, including errors and empty states</li><li><b>7</b>fixes logged in design QA before release</li></ul><p class="measure"><b>What I’d measure:</b> the thumbs-up rate on answers, the average number of messages per conversation (which drives token cost), and how many readers use the assistant again within a week.</p></div></div>
+  </div>
+</section>
+
+<section class="pager" aria-label="More case studies">
+  <div class="wrap">
+    <div class="pager-grid">
+      <a class="pg plain prev" href="../../#work"><div class="body"><span class="mono" style="color:var(--teal)">← Overview</span><h3>All five case studies</h3></div></a>
+      <a class="pg next" href="../../work/checkout-pay-later/"><div class="thumb t-pay"><img src="../../img/pay-phone.jpg" alt="" loading="lazy"><img src="../../img/pay-snapp.jpg" alt="" loading="lazy"><img src="../../img/pay-zero.jpg" alt="" loading="lazy"></div><div class="body"><span class="mono" style="color:var(--teal)">Next · 02 →</span><h3>Checkout &amp; Pay Later</h3></div></a>
+    </div>
+    <div class="cta-band">
+      <div><h2>Like what you see?</h2><p>I’m open to UI/UX designer roles in the Netherlands, and happy to walk you through this project.</p></div>
+      <div class="ctas">
+        <a class="btn primary" href="mailto:setareh.sadeghi1992@gmail.com">Email me</a>
+        <a class="btn" href="../../Setareh-Sadeghi-CV.pdf">CV (PDF)</a>
+        <a class="btn" href="https://www.linkedin.com/in/setareh-sadeghi-basedinthenetherlands/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© Setareh Sadeghi · <a href="mailto:setareh.sadeghi1992@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/setareh-sadeghi-basedinthenetherlands/" target="_blank" rel="noopener">LinkedIn</a></span><span>Taaghche work shown with original Persian interfaces</span></div></footer>
+
+<script src="../../assets/site.js"></script>
+</body>
+</html>
