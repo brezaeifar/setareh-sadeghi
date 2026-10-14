@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Setareh Sadeghi · CV</title>
+<meta name="description" content="CV of Setareh Sadeghi, UI/UX designer in Maastricht, the Netherlands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* One A4 page. Main column comes first in the markup so applicant-tracking systems read experience before the sidebar. */
+:root{--ink:#132321;--muted:#4e5e5c;--line:#d8e0dd;--teal:#0e7c77;--teal-ink:#0a5f5b;--soft:#eef4f2;--paper:#f5f7f5;
+  --f-display:"Bricolage Grotesque","Avenir Next",sans-serif;--f-body:"Figtree","Helvetica Neue",Arial,sans-serif;--f-mono:"IBM Plex Mono",Menlo,monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;color:var(--ink);font:400 9pt/1.38 var(--f-body);-webkit-font-smoothing:antialiased;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+.page{width:210mm;min-height:297mm;margin:24px auto;background:#fff;padding:11mm 13mm 9mm;box-shadow:0 4px 24px rgba(0,0,0,.08)}
+@media print{html,body{background:#fff;height:297mm;overflow:hidden}.page{margin:0;box-shadow:none;height:296mm;min-height:0;overflow:hidden}}
+@media screen and (max-width:820px){.page{width:auto;min-height:0;margin:0;padding:24px 16px;box-shadow:none}}
+a{color:inherit;text-decoration:none}
+p,ul,h1,h2,h3{margin:0}
+ul{padding:0;list-style:none}
+
+header{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:5mm;align-items:center;padding-bottom:5mm;border-bottom:1.5px solid var(--teal)}
+header img{width:23mm;height:23mm;border-radius:50%;object-fit:cover}
+h1{font:800 25pt/1 var(--f-display);letter-spacing:-.02em}
+.role{margin-top:2mm;font-weight:600;font-size:10.5pt;color:var(--teal)}
+.contact{display:grid;gap:1mm;text-align:right;font-size:8.6pt;color:var(--muted)}
+.contact a{color:var(--ink);font-weight:500}
+.contact a.hl{color:var(--teal);font-weight:600}
+@media screen and (max-width:820px){header{grid-template-columns:auto 1fr}.contact{grid-column:1/-1;text-align:left}}
+
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 54mm;gap:7mm;margin-top:5mm}
+@media screen and (max-width:820px){.grid{grid-template-columns:1fr}}
+h2{font:500 7.6pt var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-ink);margin:0 0 2.2mm}
+section+section{margin-top:4.2mm}
+.summary{font-size:9.4pt}
+
+.job+.job{margin-top:3.4mm}
+.job-head{display:flex;justify-content:space-between;gap:4mm;align-items:baseline}
+h3{font:700 10.2pt/1.25 var(--f-body)}
+h3 span{font-weight:500;color:var(--muted)}
+.date{font-size:8.3pt;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sub{font-size:8.4pt;color:var(--muted);margin:.4mm 0 1.2mm}
+.job ul{display:grid;gap:.9mm}
+.job li{position:relative;padding-left:3.6mm}
+.job li::before{content:"";position:absolute;left:.4mm;top:1.95mm;width:1.3mm;height:1.3mm;border-radius:50%;background:var(--teal)}
+.job li b{font-weight:600}
+.job li a{color:var(--teal-ink);font-weight:600}
+
+aside{background:var(--soft);border-radius:3mm;padding:5mm 4.5mm;align-self:start}
+aside section+section{margin-top:4.6mm}
+aside li{margin-top:.7mm}
+aside li:first-child{margin-top:0}
+.edu li+li{margin-top:2mm}
+.edu b,.lang b{font-weight:600}
+.edu span{display:block;color:var(--muted);font-size:8.4pt}
+.case-links li{display:flex;justify-content:space-between;gap:2mm}
+.case-links a{color:var(--teal-ink);font-weight:600}
+
+.toolbar{max-width:210mm;margin:16px auto 0;display:flex;justify-content:flex-end;gap:10px;font:600 14px var(--f-body);padding:0 4px}
+.toolbar a{color:var(--teal)}
+@media screen and (max-width:820px){.toolbar{padding:12px 16px 0}}
+/* The public copy leaves the phone number out; cv.html#full (the PDF sent with applications) keeps it. */
+.web .phone{display:none}
+@media print{.toolbar{display:none}}
+</style>
+</head>
+<body>
+<script>if(location.hash!=='#full')document.documentElement.className='web'</script>
+<div class="toolbar"><a href="./">← Portfolio</a><a href="Setareh-Sadeghi-CV.pdf" download>Download PDF</a></div>
+<div class="page">
+  <header>
+    <img src="img/portrait.jpg" alt="Portrait of Setareh Sadeghi">
+    <div>
+      <h1>Setareh Sadeghi</h1>
+      <p class="role">UI/UX Designer · Mobile &amp; Web</p>
+    </div>
+    <div class="contact">
+      <a class="hl" href="https://brezaeifar.github.io/setareh-sadeghi/">brezaeifar.github.io/setareh-sadeghi</a>
+      <a href="mailto:setareh.sadeghi1992@gmail.com">setareh.sadeghi1992@gmail.com</a>
+      <a class="phone" href="tel:+31647074571">+31 6 4707 4571</a>
+      <a href="https://www.linkedin.com/in/setareh-sadeghi-basedinthenetherlands/">LinkedIn: setareh-sadeghi</a>
+      <span>Maastricht, NL · Dutch citizen, no sponsorship needed</span>
+    </div>
+  </header>
+
+  <div class="grid">
+    <main>
+      <section>
+        <h2>Profile</h2>
+        <p class="summary">Sole UI/UX designer at Taaghche, a reading app with 2M+ active users. I take features from discovery to shipped screens on Android, iOS and web, from an AI reading assistant to a pay-later checkout. Six years in architecture, interior and visual design gave me a strong eye for layout and hierarchy, and practice in explaining design decisions.</p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="job-head"><h3>UI/UX Designer <span>· Taaghche</span></h3><span class="date">Nov 2024 – Present</span></div>
+          <p class="sub">Contract · Online bookshop and reading app · 2M+ active users · Android, iOS and web</p>
+          <ul>
+            <li>Sole designer for the whole product. I own discovery, user flows, wireframes, high-fidelity UI, prototypes, hand-off and design QA, and contribute to the design system, working with product, engineering and marketing.</li>
+            <li><b>AI Reading Assistant:</b> designed an LLM chat inside the e-book reader from start to finish. I explored 3 entry-point layouts, specified 14 screens and states, designed usage limits to control token cost, and logged 7 design-QA fixes before it shipped.</li>
+            <li><b>Checkout &amp; Pay Later:</b> redesigned the subscription checkout on mobile and desktop with Snapp Pay installments, discount codes and wallet credit. I designed 4 payment states, so the button always shows the method and the exact amount.</li>
+            <li><b>Data features:</b> designed a reading-stats dashboard (calendar heatmap, charts, daily goals) and a 10-chapter Year in Reading story. I agreed with backend developers which statistics could be calculated reliably before starting the visual design.</li>
+            <li><b>Literary Avatars:</b> illustrated 22 book-shaped characters to replace 3 generic placeholders, validated them with a user survey before development, and handed them off for Android, iOS and web.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><h3>Freelance Designer <span>· Self-employed</span></h3><span class="date">Jan 2022 – Nov 2024</span></div>
+          <p class="sub">Netherlands · Web, illustration and interior design</p>
+          <ul>
+            <li>Designed websites and digital illustrations for clients, building each client's colour palette and brand elements into the work.</li>
+            <li>Worked directly with clients to understand their needs, presented options and iterated on feedback. I also delivered interior design projects in several locations.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><h3>Architect <span>· LENS°ASS Architecten</span></h3><span class="date">May 2020 – May 2022</span></div>
+          <p class="sub">Freelance · Hasselt, Belgium</p>
+          <ul>
+            <li>Produced detailed drawings, competition entries, hand sketches and physical models, and handled calculations, site visits and material selection.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><h3>Designer <span>· ZOOM.INDUSTRIES</span></h3><span class="date">May 2018 – May 2020</span></div>
+          <p class="sub">Maastricht · Intern, then part-time Architectural Designer, then full-time Designer</p>
+          <ul>
+            <li>Created 2D drawings and models in SketchUp and Vectorworks, and designed custom furniture for clients' floor plans.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>UX/UI training projects · Ironhack</h2>
+        <div class="job">
+          <ul>
+            <li><b>C&amp;A TimeTide</b>, Android shift planner: interviews, a survey of 21 employees, MVP, usability testing and a high-fidelity prototype.</li>
+            <li><b>Seed</b>, iOS habit tracker: heuristic analysis, branding, my own illustrations, user testing, landing page and revenue plan.</li>
+            <li><b>Eco-wave</b>, responsive magazine: reading dashboard, component library, accessibility, and basic HTML and CSS.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section>
+        <h2>Case studies</h2>
+        <ul class="case-links">
+          <li><a href="https://brezaeifar.github.io/setareh-sadeghi/#ai">AI Reading Assistant</a></li>
+          <li><a href="https://brezaeifar.github.io/setareh-sadeghi/#checkout">Checkout &amp; Pay Later</a></li>
+          <li><a href="https://brezaeifar.github.io/setareh-sadeghi/#stats">Reading Stats &amp; Goals</a></li>
+          <li><a href="https://brezaeifar.github.io/setareh-sadeghi/#wrapup">Year in Reading Wrap-up</a></li>
+          <li><a href="https://brezaeifar.github.io/setareh-sadeghi/#avatars">Literary Avatars</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>UX skills</h2>
+        <ul>
+          <li>User research &amp; interviews</li>
+          <li>Surveys &amp; usability testing</li>
+          <li>User flows &amp; information architecture</li>
+          <li>Wireframes &amp; prototyping</li>
+          <li>UI design for mobile &amp; web</li>
+          <li>Design systems &amp; components</li>
+          <li>Data visualization</li>
+          <li>AI / LLM feature design</li>
+          <li>Payment &amp; checkout flows</li>
+          <li>Accessibility</li>
+          <li>Developer hand-off &amp; design QA</li>
+          <li>Illustration</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tools</h2>
+        <ul>
+          <li>Figma · FigJam</li>
+          <li>Photoshop · InDesign</li>
+          <li>Procreate</li>
+          <li>Vectorworks · SketchUp</li>
+          <li>Basic HTML &amp; CSS</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <ul class="edu">
+          <li><b>UX/UI Design Bootcamp</b><span>Ironhack · 2023</span></li>
+          <li><b>Master of Architecture</b><span>Zuyd University of Applied Sciences, Maastricht · 2017 – 2020</span></li>
+          <li><b>Bachelor, Urban Design</b><span>Saxion University of Applied Sciences · 2016 – 2017</span></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Languages</h2>
+        <ul class="lang">
+          <li><b>English</b> · fluent</li>
+          <li><b>Dutch</b> · B1</li>
+          <li><b>Persian</b> · native</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+</div>
+</body>
+</html>
